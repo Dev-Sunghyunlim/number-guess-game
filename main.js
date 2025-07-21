@@ -32,7 +32,7 @@ function getRandomNumber() {
 function checkNum() {
   let inputNumValue = inputNum.value;
   if (inputNumValue === "") {
-    resultArea.textContent = "숫자를 입력하세요.";
+    resultArea.textContent = "숫자를 입력하고 GO 버튼을 눌러주세요.";
     return;
   }
 
@@ -57,6 +57,7 @@ function checkNum() {
     resultArea.textContent =
       "맞췄습니다! 게임을 다시 하시려면 Reset 버튼을 클릭하세요.";
     checkButton.disabled = true;
+    return;
   }
 
   if (chances < 1) {
